@@ -1,0 +1,341 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    margin-left: 15px;
+}
+
+.img1 {
+    width: 8vw;
+}
+
+.abc {
+    display: flex;
+    background-color: rgb(211, 28, 28);
+    clip-path: polygon(0% 0%, 100% 0, 100% 87%, 87% 100%, 0% 100%);
+}
+
+.cd {
+    padding-left: 5%;
+    padding-top: 14%;
+    width: 40%;
+}
+
+.ft-child {
+    padding: 10px;
+    width: 67%;
+}
+
+.cd>h1 {
+    color: white;
+    font-size: 3.8em;
+    padding-bottom: 3px;
+    font-weight: 900;
+}
+
+.cd>p {
+    padding-top: 3px;
+    line-height: 25px;
+    width: 80%;
+}
+
+.ft {
+    margin-left: 15%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    width: 60%;
+}
+
+.ft>p {
+    font-size: 10px;
+    color: white;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 50%;
+    padding: 15px 30px;
+    font-size: 15px;
+}
+
+textarea {
+    background-color: rgb(221, 28, 28);
+    border: 2.5px solid white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 67%;
+}
+
+::placeholder {
+    color: wheat;
+}
+
+.ft>input {
+    background-color: rgb(221, 28, 28);
+    color: white;
+    border: 2.5px solid white;
+}
+
+/* Child Combinator */
+.ft>label {
+    color: white;
+}
+
+input,
+textarea {
+    color: white;
+}
+
+input:focus,
+textarea {
+    outline: none;
+}
+
+h3 {
+    font-size: 23px;
+    font-weight: 800;
+    width: 80%;
+    margin-top: 15px;
+}
+
+#child1 {
+    margin-left: 125px;
+    margin-top: 15px;
+}
+
+#child2 {
+    margin-left: 100px;
+}
+
+#child3 {
+    margin-left: 75px;
+}
+
+#child4 {
+    margin-left: 78px;
+}
+
+#child5 {
+    margin-left: 85px;
+}
+
+/* ----------------------Media Query for Moblie ----------------------------*/
+@media only screen and (max-width: 575px) {
+    body {
+        margin-right: 15px;
+    }
+
+    .abc {
+        flex-direction: column;
+        clip-path: polygon(0% 0%, 100% 0, 100% 93%, 82% 100%, 0% 100%);
+        width: 100%;
+    }
+
+    .cd {
+        width: 100%;
+        margin-top: -20%;
+    }
+
+    .ft {
+        width: 100%;
+        padding: 0px 20px;
+        margin-left: 0px;
+    }
+
+    .ft-child {
+        width: 100%;
+    }
+
+    .img1 {
+        width: 15vw;
+    }
+
+    .cd>h1 {
+        color: white;
+        font-size: 2em;
+        margin-bottom: 3px;
+        font-weight: 900;
+    }
+
+    .cd p {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .ft>p {
+        font-size: 10px;
+        color: white;
+        text-align: justify;
+        text-align: left;
+    }
+
+    h3 {
+        font-size: 15px;
+        font-weight: 700;
+        width: 80%;
+        margin-top: 15px;
+    }
+
+    .btn {
+        width: 80%;
+        color: black;
+        border: 2px solid white;
+    }
+
+    textarea,
+    input[type="text"] {
+        width: 100%;
+    }
+
+    #child1 {
+        margin-left: 50px;
+        margin-top: 15px;
+    }
+
+    #child2 {
+        margin-left: 25px;
+    }
+
+    #child3 {
+        margin-left: 4px;
+    }
+
+    #child4 {
+        margin-left: 10px;
+    }
+
+    #child5 {
+        margin-left: 20px;
+    }
+
+    label {
+        font-size: 14px;
+        margin-left: 4px;
+    }
+}
+
+/* ----------------------Media Query for ipad ----------------------------*/
+@media only screen and (max-width: 768px) {
+    .abc {
+        clip-path: polygon(0% 0%, 100% 0, 100% 93%, 88% 100%, 0% 100%);
+    }
+    .cd {
+        width: 100%;
+        /* margin-top: 100%; */
+    }
+
+    .ft {
+        width: 100%;
+        padding: 0px 20px;
+        margin-left: 0px;
+    }
+
+    .cd>h1 {
+        color: white;
+        font-size: 1em;
+        margin-bottom: 3px;
+        font-weight: 900;
+    }
+    .img1 {
+        width: 15vw;
+    }
+
+    .btn {
+        width: 90%;
+        color: black;
+        border: 2px solid white;
+        padding: 10px 0px;
+    }
+
+    h3 {
+        font-size: 1em;
+        font-weight: 400;
+        width: 90%;
+        margin-top: 15px;
+    }
+
+    textarea, input[type="text"] {
+        width: 100%;
+    }
+
+    #child1 {
+        margin-left: 50px;
+        margin-top: 15px;
+    }
+
+    #child2 {
+        margin-left: 25px;
+    }
+
+    #child3 {
+        margin-left: 4px;
+    }
+
+    #child4 {
+        margin-left: 10px;
+    }
+
+    #child5 {
+        margin-left: 20px;
+    }
+
+    label {
+        font-size: 14px;
+        margin-left: 4px;
+    }
+}
+
+/* ----------------------Media Query for ipad ----------------------------*/
+@media only screen and (max-width: 992px) {
+    .abc {
+        clip-path: polygon(0% 0%, 100% 0, 100% 93%, 88% 100%, 0% 100%);
+    }
+    .cd {
+        width: 100%;
+        margin-top: 14%;
+    }
+    .cd>h1 {
+        color: white;
+        font-size: 2.5em;
+        margin-bottom: 3px;
+        font-weight: 900;
+        margin-top: -80px;
+    }
+    .cd p {
+        font-size: 17px;
+        width: 80%;
+    }
+    h3 {
+        font-size: 1.2em;
+        font-weight: 700;
+        width: 80%;
+        margin-top: 15px;
+    }
+
+    .ft>p {
+        font-size: 11px;
+        color: white;
+        text-align: justify;
+        text-align: left;
+    }
+    .ft {
+        width: 100%;
+        padding: 0px 20px;
+        margin-left: 0px;
+    }
+    textarea, input[type="text"] {
+        width: 100%;
+    }
+    .btn {
+        width: 80%;
+        color: black;
+        border: 2px solid white;
+        padding: 10px 0px;
+    }
+}
